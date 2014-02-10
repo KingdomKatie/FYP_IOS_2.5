@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkTizen">
+      <Configuration>Debug</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkTizen">
+      <Configuration>Dev</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkTizen">
+      <Configuration>Release</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6A51F68-5A26-4A49-8974-C5DDD63FB068}</ProjectGuid>
+    <RootNamespace>GamePlugin</RootNamespace>
+    <ProjectName>GamePlugin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_tizen_vs2010_anarchyDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_tizen_vs2010_anarchyDev.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_tizen_vs2010_anarchyRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <OutDir>..\..\Lib\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\GamePlugin\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <TargetName>libGamePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <OutDir>..\..\Lib\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\GamePlugin\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <TargetName>libGamePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <OutDir>..\..\Lib\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\GamePlugin\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <TargetName>libGamePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderFile>GamePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GamePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderFile>GamePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GamePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderFile>GamePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GamePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GamePluginModule.h" />
+    <ClInclude Include="GamePluginPCH.h" />
+    <ClInclude Include="myComponent.h" />
+    <ClInclude Include="TemplateAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GamePluginPCH.cpp" />
+    <ClCompile Include="myComponent.cpp" />
+    <ClCompile Include="PluginMain.cpp" />
+    <ClCompile Include="TemplateAction.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

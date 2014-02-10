@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkTizen">
+      <Configuration>Debug</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkTizen">
+      <Configuration>Dev</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkTizen">
+      <Configuration>Release</Configuration>
+      <Platform>hkTizen</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>ProjectTemplate</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-gnueabi-gcc-4.5</PlatformToolset>
+    <TizenArch>armv7-a</TizenArch>
+    <TizenStlType>gnustl_static</TizenStlType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\Application_tizen_vs2010_anarchyDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\Application_tizen_vs2010_anarchyDev.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\Application_tizen_vs2010_anarchyRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <OutDir>..\..\Bin\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\ProjectTemplate\</IntDir>
+    <TargetName>ProjectTemplate</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <TargetName>ProjectTemplate</TargetName>
+    <OutDir>..\..\Bin\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\ProjectTemplate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <TargetName>ProjectTemplate</TargetName>
+    <OutDir>..\..\Bin\tizen_vs2010_anarchy\$(Configuration)\</OutDir>
+    <IntDir>..\..\Obj\tizen_vs2010_anarchy\$(Configuration)\ProjectTemplate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    </LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    </LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    </LinkIncremental>
+    <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>GameApplicationPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GameApplicationPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lVisionAppD;-lGamePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\Lib\tizen_vs2010_anarchy\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Deploy>
+      <DeployTool>$(VISION_SDK)\Build\StandaloneTools\Deployment\Exe\deployTizen.exe</DeployTool>
+      <ResDir>..\..\Data\Common\Anarchy\Tizen\icons</ResDir>
+      <Install>true</Install>
+      <Resources>..\../Data/Vision/Base/,Data/Vision/Base/ ..\../Assets/,Assets/</Resources>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>GameApplicationPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GameApplicationPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\Lib\tizen_vs2010_anarchy\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lVisionApp;-lGamePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Deploy>
+      <DeployTool>$(VISION_SDK)\Build\StandaloneTools\Deployment\Exe\deployTizen.exe</DeployTool>
+      <ResDir>..\..\Data\Common\Anarchy\Tizen\icons</ResDir>
+      <Install>true</Install>
+      <Resources>..\../Data/Vision/Base/,Data/Vision/Base/ ..\../Assets/,Assets/</Resources>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkTizen'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>GameApplicationPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)GameApplicationPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\Lib\tizen_vs2010_anarchy\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lVisionApp;-lGamePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Deploy>
+      <DeployTool>$(VISION_SDK)\Build\StandaloneTools\Deployment\Exe\deployTizen.exe</DeployTool>
+      <ResDir>..\..\Data\Common\Anarchy\Tizen\icons</ResDir>
+      <Install>true</Install>
+      <Resources>..\../Data/Vision/Base/,Data/Vision/Base/ ..\../Assets/,Assets/</Resources>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameApplicationPCH.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameApplicationPCH.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

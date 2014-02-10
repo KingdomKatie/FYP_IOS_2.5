@@ -1,0 +1,6 @@
+<root>
+    <Materials>
+        <Material name="mat_body" diffuse="warrior_cmap-2k.dds" normalmap="warrior_nmap-2k.dds" specularmap="warrior_smap-2k.dds" transparency="opaque" doublesided="FALSE" specmul="1.5000" specexp="8.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" />
+        <Material name="mat_hair" diffuse="Hair_cmap.dds" normalmap="Hair_nmap.dds" specularmap="Hair_cmap.dds" transparency="alpha" doublesided="FALSE" specmul="0.500000" specexp="40.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" />
+    </Materials>
+</root>

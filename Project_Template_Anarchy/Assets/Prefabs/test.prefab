@@ -1,0 +1,35 @@
+<root>
+  <info createdby="vForge version 2013.1.1.1" />
+  <header version="0" name="" description="" category="" convertible="True" autosavebinary="False" relativefilenames="False" />
+  <shape class="EntityShape">
+    <property name="ModelFile" value="Models/Warrior/Warrior.model" />
+    <property name="CustomMaterialSet" value="&lt;None&gt;" />
+    <property name="EntityClass" value="VisBaseEntity_cl" />
+    <property name="ClassDefinitionTemplate" value="" />
+    <property name="EntityPropertyString" value="" />
+    <property name="NavMeshUsage" value="IncludeInNavMesh" />
+    <property name="VisibleBitmask" value="4294967295" />
+    <property name="NearClipDistance" value="0" />
+    <property name="FarClipDistance" value="0" />
+    <property name="RenderOrderPriority" value="0" />
+    <property name="CastDynamicShadows" value="False" />
+    <property name="CastStaticShadows" value="False" />
+    <property name="LightInfluenceBitmask" value="1" />
+    <property name="AmbientColor" value="0,0,0,255" />
+    <property name="ShowLightgridWidget" value="False" />
+    <property name="SampleOfsX" value="0" />
+    <property name="SampleOfsY" value="0" />
+    <property name="SampleOfsZ" value="0" />
+    <property name="ObjectKey" value="" />
+    <property name="Visible" value="True" />
+    <property name="Position" value="0,0,0" />
+    <property name="Orientation" value="90,0,0" />
+    <property name="Scaling" value="1,1,1" />
+    <property name="TextLabel" value="" />
+    <property name="ShapeName" value="Warrior.model" />
+    <property name="UserDataString" value="" />
+    <property name="ExportShape" value="True" />
+    <property name="UniqueID" value="9714451201545732099" />
+    <component class="VPlayerCamera" paramstring="ComponentID=;Enabled=True;Collides=False;Follow=False;FollowFixed=False;Zoom=True;InitialYaw=0;InitialPitch=30;CameraDistance=500;MinimalDistance=100;MaximalDistance=1000;RelativeLookAtHeight=2;CameraSensitivity=200;MoveSmoothness=1;" visible="True" serializable="True" editable="True" removable="True" />
+  </shape>
+</root>

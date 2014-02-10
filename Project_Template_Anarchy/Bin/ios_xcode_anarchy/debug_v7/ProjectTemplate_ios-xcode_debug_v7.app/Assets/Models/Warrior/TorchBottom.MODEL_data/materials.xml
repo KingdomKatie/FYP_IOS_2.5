@@ -1,0 +1,5 @@
+<root>
+    <Materials>
+        <Material name="07 - Default" diffuse="warrior_cmap-2k.DDS" normalmap="warrior_nmap-2k.dds" specularmap="warrior_smap-2k.DDS" transparency="opaque" doublesided="FALSE" specmul="1.510000" specexp="1.741101" parallaxscale="-0.030000" parallaxbias="-0.015000" />
+    </Materials>
+</root>

@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectTemplate", "GameApplication\ProjectTemplate_tizen_vs2010.vcxproj", "{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068} = {D6A51F68-5A26-4A49-8974-C5DDD63FB068}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlugin", "GamePlugin\GamePlugin_tizen_vs2010.vcxproj", "{D6A51F68-5A26-4A49-8974-C5DDD63FB068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|hkTizen = Debug|hkTizen
+		Dev|hkTizen = Dev|hkTizen
+		Release|hkTizen = Release|hkTizen
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Debug|hkTizen.ActiveCfg = Debug|hkTizen
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Debug|hkTizen.Build.0 = Debug|hkTizen
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Dev|hkTizen.ActiveCfg = Dev|hkTizen
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Dev|hkTizen.Build.0 = Dev|hkTizen
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Release|hkTizen.ActiveCfg = Release|hkTizen
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Release|hkTizen.Build.0 = Release|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Debug|hkTizen.ActiveCfg = Debug|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Debug|hkTizen.Build.0 = Debug|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Dev|hkTizen.ActiveCfg = Dev|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Dev|hkTizen.Build.0 = Dev|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Release|hkTizen.ActiveCfg = Release|hkTizen
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Release|hkTizen.Build.0 = Release|hkTizen
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

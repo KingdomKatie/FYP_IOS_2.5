@@ -1,0 +1,10 @@
+<root>
+    <Resources Version="1" Count="6" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/HeroLowPoly.model_data\materials.xml" OwnerRes="4" Size="698" />
+        <Resource Manager="Animations" Filename="Models\HeroLowPoly.anim" Size="1024" />
+        <Resource Manager="Textures" Filename="Models\Textures\hero_d.dds" CustomInt="1,64" Size="349552" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3522784" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/HeroLowPoly.model" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="390384" />
+    </Resources>
+</root>

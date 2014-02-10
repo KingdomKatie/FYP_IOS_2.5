@@ -1,0 +1,5 @@
+<root>
+    <Materials>
+        <Material name="floor01" diffuse="..\Textures\floor01_diff.tga" normalmap="" specularmap="" ambient="0,0,0,255" specmul="0.000000" specexp="2.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" lightmapsize="512,512" lightmapID="0" userstring="" userflags="0" sortingkey="0" doublesided="FALSE" Lighting="Lightmapping" deferredID="0" pass="AUTO" mobileflags="0" transparency="opaque" alphathreshold="-1.000000" overridemateriallib="" overridematerialname="" />
+    </Materials>
+</root>

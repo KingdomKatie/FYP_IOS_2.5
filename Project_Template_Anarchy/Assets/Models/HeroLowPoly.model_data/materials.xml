@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="hero" diffuse="Textures\hero_d.dds" ambient="0,0,0,255" specmul="0" specexp="2" parallaxscale="-0.03" parallaxbias="-0.015" lightmapsize="512,512" lightmapID="0" userflags="0" sortingkey="0" doublesided="FALSE" Lighting="Fullbright" pass="Auto" mobileflags="0" transparency="opaque" alphathreshold="0.25" depthwrite="TRUE" zbias="0,0,0" lightmapgran="0">
+            <Shader library="..\Shaders\MobileShaders.ShaderLib" effect="Diffuse" paramstring="CullMode=back;DepthWrite=true;MaterialParams=0,2,-0.03,-0.015;AlphaThreshold=0.25;VertexLighting=False;DynamicLightNormalMapping=False;" />
+        </Material>
+    </Materials>
+</root>
